@@ -31,7 +31,7 @@ app.use(express.json());
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// Use routes
+
 app.use('/api/products', productRoutes);
 app.use('/api/delivery-options', deliveryOptionRoutes);
 app.use('/api/cart-items', cartItemRoutes);
